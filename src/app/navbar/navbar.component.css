@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #141E46;
+}
+
+.nav-link, .nav-link.active, .navbar-brand, i.bi, .navbar-toggler-icon {
+    color: #FFF5E0;
+}
+
+a:hover.nav-link, a:hover > i.bi {
+    color: #FF6969;
+}
