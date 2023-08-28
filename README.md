@@ -1,27 +1,46 @@
-# Portfolio
+# Portofolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+Personal website generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
 
-## Development server
+## Installation
+Follwing are the steps to install this application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clone this repository
+```
+git clone git@github.com:Popovkov57/Portofolio.git
+```
 
-## Code scaffolding
+2. Go into the folder `Portofolio` which was cloned.
+```
+cd Portofolio
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Install necessary dependencies
+```
+npm install
+```
 
-## Build
+## Running the application
+1. To run the app in the development mode.\
+```
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. To launch the test runner in the interactive watch mode.\
+```
+ng test
+```
 
-## Running unit tests
+## Building the application
+1. To build the app for production to the `public` folder.\
+```
+ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Build Information
 
-## Running end-to-end tests
+[![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/firstcontributions/open-source-badges)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+The source code for the site is licensed under the MIT license, which you can find in the [LICENSE](https://github.com/Popovkov57/Portofolio/blob/main/LICENSE) file.
+All graphical assets are licensed under the Creative Commons Attribution 3.0 Unported License.
