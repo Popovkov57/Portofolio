@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "public",
+            "outputPath": "dist/Portfolio/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -95,6 +95,60 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/Portfolio/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "Portfolio:build:development",
+              "serverTarget": "Portfolio:server:development"
+            },
+            "production": {
+              "browserTarget": "Portfolio:build:production",
+              "serverTarget": "Portfolio:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "Portfolio:build:production",
+              "serverTarget": "Portfolio:server:production"
+            },
+            "development": {
+              "browserTarget": "Portfolio:build:development",
+              "serverTarget": "Portfolio:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

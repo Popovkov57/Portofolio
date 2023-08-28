@@ -25,6 +25,9 @@ echo "Installing Dependencies..."
 npm install --yes
 
 echo "Creating Production Build..."
-ng build
+npm run build:ssr
+
+echo "Run middleware"
+npm run serve:ssr
 
 echo "Deployment Finished!"
