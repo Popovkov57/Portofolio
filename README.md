@@ -23,18 +23,13 @@ npm install
 ## Running the application
 1. To run the app in the development mode.\
 ```
-ng serve
-```
-
-2. To launch the test runner in the interactive watch mode.\
-```
-ng test
+npm run dev:ssr
 ```
 
 ## Building the application
-1. To build the app for production to the `public` folder.\
+1. To build the app for production to the `dist` folder.\
 ```
-ng build
+npm run build:ssr:prod
 ```
 
 ## Build Information
@@ -43,4 +38,3 @@ ng build
 
 ## License
 The source code for the site is licensed under the MIT license, which you can find in the [LICENSE](https://github.com/Popovkov57/Portofolio/blob/main/LICENSE) file.
-All graphical assets are licensed under the Creative Commons Attribution 3.0 Unported License.

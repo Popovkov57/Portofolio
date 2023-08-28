@@ -7,10 +7,13 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { AppServerModule } from './src/main.server';
 
+import { environment } from 'src/environments/environment';
+
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const distFolder = join(process.cwd(), 'dist/Portfolio/browser');
+  //const distFolder = join(process.cwd(), 'dist/Portfolio/browser');
+  const distFolder = environment.production ? environment.browserPath : join(process.cwd(), environment.browserPath);
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)

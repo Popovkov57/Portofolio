@@ -18,16 +18,22 @@ nvm install 20
 echo "Use Node 20"
 nvm use 20
 
+echo "Install pm2"
+npm install pm2 -g 
+
 echo "Installing Angular cli"
 npm install -g @angular/cli
 
-echo "Installing Dependencies..."
+echo "Installing Dependencies"
 npm install --yes
 
-echo "Creating Production Build..."
-npm run build:ssr
+echo "Building Prod"
+npm run build:ssr:prod
+
+echo "Kill all process"
+pm2 kill
 
 echo "Run middleware"
-npm run serve:ssr
+pm2 start dist/Portfolio/server/main.js
 
 echo "Deployment Finished!"

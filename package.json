@@ -10,7 +10,8 @@
     "dev:ssr": "ng run Portfolio:serve-ssr",
     "serve:ssr": "node dist/Portfolio/server/main.js",
     "build:ssr": "ng build && ng run Portfolio:server",
-    "prerender": "ng run Portfolio:prerender"
+    "prerender": "ng run Portfolio:prerender",
+    "build:ssr:prod": "ng build --configuration production && ng run Portfolio:server:production"
   },
   "private": true,
   "dependencies": {
