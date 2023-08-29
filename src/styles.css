@@ -1,7 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/Nunito.tff');
+}
+
 html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #141E46!important;
+    background-color: #141E46 !important;
 }
