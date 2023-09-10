@@ -9,3 +9,7 @@
 a:hover.nav-link, a:hover > i.bi {
     color: #FF6969;
 }
+
+.active-navlink {
+    color: #FF6969;
+}
