@@ -1,6 +1,6 @@
 # Portofolio
 
-Personal website generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+Personal website generated with [Angular CLI](https://github.com/angular/angular-cli) v16.1.7.
 
 ## Installation
 Follwing are the steps to install this application
